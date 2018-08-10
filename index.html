@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Trivia Game</title>
+
+		<!-- Link in CSS Files -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	</head>
+	<body>
+
+		<!--  -->
+		<div id = start_container>
+			<!-- Static Game Logo -->
+			<h1 class = "logo">Yankees Trivia</h1>
+
+			<button id = "start_button">Start"></button>
+		</div>
+
+
+		<!-- During Gameplay Container -->
+		<div id = mid_game_container>
+			<!-- Static Game Logo -->
+			<h1 class = "logo">Yankees Trivia</h1>
+
+			<!-- Game Timer -->
+			<h1 id = "timer_line">Time Remaining: <span id = "timer_number">60 Seconds</span></h1>
+
+			<!-- Game Questions -->
+
+			<h1>1.The New York Yankees organization began as the Baltimore Orioles in 1901. In 1903 the team moved to New York and took a new name. What was the new name that the team took in 1903??</h1>
+			<!-- NY Highlanders -->
+				<input type="radio" name="q1" value="Yankees"> Yankees 
+				<input type="radio" name="q1" value="NY Highlanders"> NY Highlanders
+				<input type="radio" name="q1" value="NY Baseball Club">NY Baseball Club 
+				<input type="radio" name="q1" value="NY Giants">NY Giants 
+				
+
+			<h1>2.Of these great Yankee teams, 1927, 1961, 1978, or 1998, which team had the most wins in a season??</h1>
+			<!-- 1998 -->
+				<input type="radio" name="q2" value="1927">1927
+				<input type="radio" name="q2" value="1961">1961
+				<input type="radio" name="q2" value="1998">1998
+				<input type="radio" name="q2" value="1978">1978
+
+
+
+			<h1>3.Which year did the franchise take on the name "Yankees"?</h1>
+			<!-- 1913  -->
+				<input type="radio" name="q3" value="1913">1913 
+				<input type="radio" name="q3" value="1923">1923 
+				<input type="radio" name="q3" value="1916">1916 
+				<input type="radio" name="q3" value="The Rutgers Times">1945
+
+
+			<h1>4. In which of these years did the Yankees win five World Series in a row??</h1>
+			<!--  1949-1953  -->
+				<input type="radio" name="q4" value="25,000">1950-1954 
+				<input type="radio" name="q4" value="35,000">1925-1929
+				<input type="radio" name="q4" value="1959-1963">1959-1963
+				<input type="radio" name="q4" value="1936-1940">1936-1940 
+				<input type="radio" name="q4" value=" 1949-1953 "> 1949-1953 
+
+
+			<h1>5. 8 The 1927 Yankees found themselves in their fifth World Series. Which manager took the team to all five of these in 1927??</h1>
+			<!--  Miller Huggins   -->
+				<input type="radio" name="q5" value="Joe Girardi "> Joe Girardi 
+				<input type="radio" name="q5" value="Ralph Houk">Ralph Houk
+				<input type="radio" name="q5" value="Casey Stengel">Casey Stengel 
+				<input type="radio" name="q5" value="Busch">Busch
+				<input type="radio" name="q5" value=" Miller Huggins "> Miller Huggins 
+			
+			<h1>6. Of all the Yankee great managers, which of the following managed the team the most seasons?</h1>
+			<!-- Joe McCarthy  -->
+				<input type="radio" name="q6" value="Ralph Houk">Ralph Houk
+				<input type="radio" name="q6" value="Wally Post">Wally Post 
+				<input type="radio" name="q6" value="Yogi Berra">Yogi  Berra 
+				<input type="radio" name="q6" value="Joe McCarthy ">Joe McCarthy  
+				
+
+			<h1>Who was the only Yankee to win the Rookie of the Year in the 1990's?</h1>
+			<!-- Derek -->
+				<input type="radio" name="q7" value="New Brunswick">Andy Petite
+				<input type="radio" name="q7" value="Camden"> Mo Riverra
+				<input type="radio" name="q7" value="Newark">Alex Rodriguez
+				<input type="radio" name="q7" value="Jersey City"> Derek Jeter
+
+			<h1>8. Which of the following players did not play with the Yankees during the 1980 season?</h1>
+			<!-- Dave Righetti  -->
+				<input type="radio" name="q8" value="Busch">Busch 
+				<input type="radio" name="q8" value="Livingston">Livingston 
+				<input type="radio" name="q8" value="College Avenue">College Avenue 
+				<input type="radio" name="q8" value="Dave Righetti">Dave Righetti 
+
+			<h1>9.  On January 3, 1920, the Yankees purchased the contract of Babe Ruth from what MLB team?</h1>
+			<!-- Boston Red Sox -->
+				<input type="radio" name="q9" value="$7,500"> NY Mets
+				<input type="radio" name="q9" value="$10,250">White Sox
+				<input type="radio" name="q9" value="$11,750">Boston Red Sox
+				<input type="radio" name="q9" value="$13,500">Cleveland Indians
+
+			<h1>10. Which Yankee team blasted out the most home runs in a season?</h1>
+			<!-- Over 1961 -->
+				<input type="radio" name="q10" value="950">1920
+				<input type="radio" name="q10" value="1,250">1936
+				<input type="radio" name="q10" value="1,500">1998
+				<input type="radio" name="q10" value="Over 1,700">1961
+
+
+				<br>
+
+
+			<button id = done_button>Done!</button>
+
+		</div>
+
+
+
+
+		<!-- End of the game -->
+		<div id = end_container>
+			<!-- Static Game Logo -->
+			<h1 class = "logo">Yankees Trivia</h1>
+
+			<h1 id = "done">All Done!</h1>
+			<br>
+
+			<h1>Correct Answers: <span id = "correct_answers">0</span></h1>
+			<h1>Incorrect Answers: <span id = wrong_answers>0</span></h1>
+			<h1>Unanswered: <span id = "unanswered">0</span></h1>
+		</div>
+			
+
+
+
+		<!-- Link in jQuery -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+		<!-- Link in JavaScript -->
+		<script src="assets/javascript/app.js"></script>
+		
+	</body>
